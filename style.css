@@ -1,0 +1,85 @@
+/* ================ Start Navbar CSS ================ */
+.navbar{
+    background-color: #ffc107;
+}
+
+.navbar .container-fluid{
+    margin: 0 5%;    
+}
+.navbar .navbar-brand img{
+    height: 3rem;
+}
+.nav-flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-nav li a{
+    color: #795b03;
+}
+.navbar-nav{
+    align-items: center;
+}    
+.d-flex .nav-btn{
+    color: #FFF;
+    font-weight: 500;
+    border: 1px solid #FFF;
+}
+/* ================ End Navbar CSS ================ */
+
+/* ================ Start Home CSS ================ */
+.home{
+    height: 70vh;
+    background:#ffc107;
+}
+
+.home-left{    
+    height: 70vh;
+    padding-top: 8%;
+}
+@media (max-width: 575.98px) {
+    .home-left h1{
+        font-size: 13vw
+    }    
+}
+@media (min-width: 576px) and (max-width:991.98px) {
+    .home-left h1{
+        font-size: 10vw
+    }    
+}
+@media (min-width: 992px) {
+    .home-left h1{
+        font-size: 4vw
+    }    
+}
+
+.home-left h1 {
+    font-weight: 400;
+    color: #FFF;    
+}
+.home-left h1 span{
+    display: inline-block;
+}
+.home-left p{
+    color: #FFF;
+    font-size: 21px;
+}
+.home-right img{
+    height: 100%;
+    margin-left: 30%;  
+
+}
+@media (max-width: 991.98px) {
+    .home-right{
+        display: none;
+    }    
+}
+#mail-btn{
+    background-color: #ffc107;
+    color: #FFF;
+    font-weight: 500;
+    transition: all .3s;
+}
+#mail-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
