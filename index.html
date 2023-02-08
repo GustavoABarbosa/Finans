@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Finans</title>
+    <title>Finans - Suas Finanças</title>
 
     <link href="./style.css" type="text/css" rel="stylesheet">
     <link href="./mobile.css" type="text/css" rel="stylesheet">
@@ -20,7 +20,7 @@
 
   <body>
     <!-- ============== Start Navbar ==============-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./img/logo.png">
@@ -40,12 +40,12 @@
               <a class="nav-link" href="#">Benefícios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Preço</a>
+              <a class="nav-link" href="#">Preço</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">
-                <form class="d-flex" role="search">
-                  <button class="btn nav-btn" type="submit">Entrar</button>
+              <a class="nav-link" href="#">
+                <form class="d-flex">
+                  <button class="btn primary-btn" id="btn-nav" type="submit">Entrar</button>
                 </form>                
               </a>
             </li>
@@ -54,16 +54,16 @@
       </div>
     </nav>
     <!-- ============== End Navbar ==============-->
-    <div class="home">
+    <section class="home">
       <div class="container">
         <div class="row">
-          <div class="home-left col-lg-6 col-12">
+          <div class="home-left col-md-6">
             <h1 class="h1">Suas <span>contas,</span></h1>
             <h1 class="h1">descomplicadas</h1>
             <p>Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta online que vai facilitar sua vida financeira</p>
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Seu e-mail" aria-label="Seu e-mail" aria-describedby="button-addon2">
-              <button class="btn btn-outline-light" type="button" id="mail-btn">Cadastre-se</button>
+              <button class="btn btn-outline-light primary-btn" type="button" id="mail-btn">Cadastre-se</button>
             </div>
             <p>Disponível para
               <span> <a href="" class="btn btn-outline-light"> 
@@ -73,13 +73,93 @@
               </p>
             
           </div>
-          <div class="home-right col-lg-6 col-12">
+          <div class="home-right d-none d-md-block col-md-6">
             <img src="./img/capa-mulher.png">
           </div>
         </div>
       </div>
 
-    </div>
+    </section>
+    <section class="caixa">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="left-graph d-flex justify-content-center flex-column col-md-6 col-12">
+            <h2 class="h2">Saiba para onde vai o seu dinheiro</h2>
+            <p>Com o Finans, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe de onde vem e para onde vai o seu dinheiro.</p>
+            <button type="button" class="primary-btn saiba-btn">Veja mais</button>
+
+          </div>
+          <div class="right-graph col-md-6">
+            <img class="my-auto"src="./img/saiba.png" alt="Graph">
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="caixa">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="left-juros col-md-6 col-sm-12">
+            <img class="my-auto img-fluid" src="./img/juros.png" alt="Graph">        
+          </div>
+          <div class="right-juros d-flex justify-content-center flex-column col-md-5 col-sm-12">
+            <h2 class="h2">Pare de pagar juros e economize</h2>
+            <p>Manter as contas em dia é sempre um problema? O Finans avisa você: receba alertas de contas a pagar e a receber!</p>
+            <button type="button" class="primary-btn saiba-btn">Veja mais</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="caixa">
+      <div class="container">
+        <div class="row">
+          <div class="cards d-flex justify-content-center">
+            <div class="card col-md-4">
+              <img src="./img/facil.png" class="img-fluid card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="h4 card-title">Fácil de usar</h4>
+                <p class="card-text">O Finans vai além do básico e permite que você faça controles incríveis, essenciais para suas finanças. Simples como tem que ser!</p>
+              </div>
+            </div>
+            <div class="card col-md-4">
+              <img src="./img/economize.png" class="img-fluid card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="h4 card-title">Economize seu tempo</h4>
+                <p class="card-text">Tempo é dinheiro! Em segundos, você tem tudo sob controle e aproveite seu tempo com o que realmente importa pra você!</p>
+              </div>
+            </div>
+            <div class="card col-md-4">
+              <img src="./img/suporte.png" class="img-fluid card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="h4 card-title">Suporte amigo</h4>
+                <p class="card-text">Dúvidas? Perguntas? Nosso suporte super legal ajuda você! A gente tá aqui pra resolver seus problemas e deixar sua vida bem mais fácil!</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer class="mt-4 mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md8">
+            <p>
+              <a href="">Home</a>
+              <a href="">Recursos</a>
+              <a href="">Benefícios</a>
+              <a href="">Preços</a>
+            </p>
+          </div>
+          <div class="footer-btn d-flex justify-content-end">
+            <a href="#" class="btn btn-outline-dark mx-2"><i class="fa-brands fa-square-github" style="color:black"></i></a>
+            <a href="#" class="btn btn-outline-dark mx-2"><i class="fa-brands fa-linkedin" style="color:black"></i></a>
+            <a href="#" class="btn btn-outline-dark mx-2"><i class="fa-brands fa-square-instagram" style="color:black"></i></a>
+
+          </div>
+        </div>
+      </div>
+      
+    </footer>
 
 
     <!-- JavaScript (Opcional) -->

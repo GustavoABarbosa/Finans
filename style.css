@@ -4,7 +4,7 @@
 }
 
 .navbar .container-fluid{
-    margin: 0 5%;    
+    margin: 0 14%;    
 }
 .navbar .navbar-brand img{
     height: 3rem;
@@ -15,25 +15,36 @@
 }
 .navbar-nav li a{
     color: #795b03;
+    transition: all .2s;
+}
+.navbar-nav li a:hover{
+    color: #FFF;
 }
 .navbar-nav{
     align-items: center;
 }    
-.d-flex .nav-btn{
+.d-flex .primary-btn{
+    background: #ffc107;
     color: #FFF;
     font-weight: 500;
     border: 1px solid #FFF;
+    transition: all .5s;
+} 
+#btn-nav:hover{
+    background-color: #fff;
+    color: #000;
+
 }
 /* ================ End Navbar CSS ================ */
 
 /* ================ Start Home CSS ================ */
 .home{
-    height: 70vh;
+    height: 517.98px;
     background:#ffc107;
 }
 
 .home-left{    
-    height: 70vh;
+    height: 100%;
     padding-top: 8%;
 }
 @media (max-width: 575.98px) {
@@ -41,7 +52,7 @@
         font-size: 13vw
     }    
 }
-@media (min-width: 576px) and (max-width:991.98px) {
+@media (min-width: 576px) and (max-width:767.98px) {
     .home-left h1{
         font-size: 10vw
     }    
@@ -53,7 +64,7 @@
 }
 
 .home-left h1 {
-    font-weight: 400;
+    font-weight: 300;
     color: #FFF;    
 }
 .home-left h1 span{
@@ -65,10 +76,10 @@
 }
 .home-right img{
     height: 100%;
-    margin-left: 30%;  
+    min-height: 1px;
 
 }
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
     .home-right{
         display: none;
     }    
@@ -80,6 +91,82 @@
     transition: all .3s;
 }
 #mail-btn:hover{
+    transform: translateX(-30px);
     background-color: #fff;
     color: #000;
 }
+/* ================ End Home CSS ================ */
+
+/* ================ Start Saiba CSS ================ */
+.caixa{
+    padding: 60px ;
+    border: 1px solid rgb(235, 235, 235);
+
+}
+.left-graph{
+    height: 30vh;
+
+}
+.saiba-btn{
+    width: 100px;
+    height: 40px;
+}
+.saiba-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.right-graph{
+    height:100%;
+
+    
+}
+.right-graph > img{
+    width: 100%;
+    margin-left: -10px;
+}
+/* ================ End Saiba CSS ================ */
+
+
+/* ================ Start Juros CSS ================ */
+
+.left-juros{
+    height: auto;
+}
+.right-juros{
+    width: 100px;
+}
+
+/* ================ End Juros CSS ================ */
+
+/* ================ Start Cards CSS ================ */
+.card{
+    border: none !important;
+}
+
+@media (max-width: 767.98px) {
+    .cards{
+        flex-direction: column
+    }
+}
+/* ================ End Cards CSS ================ */
+
+
+/* ================ Start Footer CSS ================ */
+footer p{
+    margin-bottom: 2rem;
+}
+footer p a{
+    text-decoration: none;
+    margin: 5px 15px;
+}
+.footer-btn a{
+    transition: all .3s;
+}
+.footer-btn a:hover{
+    background:white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+}
+/* ================ End F CSS ================ */
+
